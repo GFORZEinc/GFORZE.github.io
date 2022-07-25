@@ -1,100 +1,192 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
     <title>GFORZE</title>
+    <link href="CSS/Style.css" rel="stylesheet">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
 </head>
-
 <body>
 
-        <header>
-            <div class="menu">
-                <img src="IMG/LOGO_GFORZE.png" alt="LOGO">
-                <nav>
-                    <ul>
-                    <li><a href="#q">Inicio</a></li>
-                    <li><a href="#c">Caracteristicas</a></li>
-                    <li><a href="#l">Servicios</a></li>
-                    <li><a href="#r">Contactanos</a></li>
-                    </ul>
-                </nav>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+              <img src="IMG/LOGO_GFORZE.png" alt="logo" style="width:250px;">
+            </a>
+            
+            <!-- Links -->
+            <div class="Links">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: black;">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Princ" style="color: black;">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Caract" style="color: black;">Caracteristicas
+                    
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#foot" style="color: black;">Contactanos</a>
+                </li>
+                </ul>
             </div>
-        </header>
+          </nav>
+    </header>
 
-    <div class="f" id="q">
-        <div class="gen">
-            <div class="Qui">
-                <h1>¿Quienes Somos?</h1>
-                <p>Nuestra actividad es la creación de software. GFORZE brinda un servicio, que, dependiendo de la necesidad del cliente, 
-                    el producto va a estar destinado a esas necesidades, También los conocimientos de la empresa se irán adaptando, para que el 
-                    producto, sea del agrado del cliente.</p>
-            </div>
-            <div class="sofimg">
-            </div>
-        </div>
+    <div id="Princ">
+        <img src="IMG/Tr.png" alt="IMG" width="100%" height="500px">
+        <h1>¿Sobre Nosotros?</h1>
     </div>
 
-    <div class="u" id="c">
-        <div class="m">
-            <div class="Vis">
-                <h1>Vision</h1>
+    <h6>¿Que Hacemos?</h6>
 
-                <p>GFORZE es consciente del poco tiempo que lleva como empresa informática, pero estamos enfocados en crecer constantemente. 
-                Seguiremos ofreciendo un trabajo excelente con nuevos conocimientos, herramientas, personal para poder proporcionar mejores 
-                productos a nuestros clientes. </p>
-            </div>
-            <div class="Obj">
-                <h1>Objetivos</h1>
-                
-                <li>Tener mayor cantidad de clientes satisfechos.</li>
-                <li>Obtener mejores conocimientos.</li>
-                <li>Incorporar a nuestro equipo colaboradores altamente capacitados.</li>
-                <li>Ofrecer nuestros servicios, no solo a nivel nacional, sino que poder expandirnos a nivel internacional.</li>
-                <li>Ser reconocidos por nuestro gran trabajo, eficiencia, rapidez y valores.</li>
-            </div>
-            <div class="Mis">
-                <h1>Mision</h1>
-
-                <p>GFORZE cuenta con trabajadores capacitados en el área de la informática. También cuentan con 
-                    conocimientos en sistemas web y la correcta instalación en los servidores de los clientes.
-                    Cumpliremos detalladamente las especificaciones y pautas detalladas en el contrato.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="p" id="l">
-        <div class="a">
-            <div class="Trbj">
-                <h1>¿Con que Trabajamos?</h1>
-            </div>
-
-            <div class="ConTrbj">
-                <h2>El equipo GFORZE se dedica a trabajar con Visual Studio Code utilizando los lenguajes PHP 8, HTML5, CSS3, AJAX, MYSQL, Java Script 
-                    y BOOTSTRAP. Tambien utilizamos para subir nuestros proyectos Git Hub para tener una mayor facilidad
-                    a la hora de compenetrarnos.
-                </h2>
-            </div>
-
-            <div class="ConTrbj2">
-                <h2>El equipo GFORZE se dedica a trabjar con los Sistemas Operativos para terminales tipo Windows y Linux. 
-                    Como Servidores trabajamos con Centos 7, Fedora Server y SUSE, preferentemente nuestro equipo esta mas capacitado a la hora de 
-                    utilizar Fedora Server, no solamente por la utilizacion, si no tambien por el mantenimiento que tiene este Sistema Operativo.
-                </h2>
-            </div>
-        </div>
+    <div id="Somos" class="jumbotron">
+        <h1>Servicios</h1>
+        <p>Nuestra actividad es la creación de software. GFORZE brinda un servicio, que, dependiendo de la necesidad del cliente, el producto va a 
+            estar destinado a esas necesidades, También los conocimientos de la empresa se irán adaptando, para que el producto, 
+            sea del agrado del cliente.</p>
     </div>
 
-    <div class="man" id="r">
-        <div class="IMGLog">
-            <img src="IMG/LOGO_GFORZE.png" alt="LOGO">
-        </div>
-        <p>Telefono: 095 003 085</p>
-        <p>Telefono de Linea: 2313-7913</p>
-        <p>Email: gforzeinc@gmail.com</p>
+    <div id="lang">
+        <p>Lenguajes que manejamos</p>
     </div>
 
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="IMG/PHP.jpg" alt="Los Angeles" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/html.jpg" alt="Chicago" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/MySql.jpg" alt="New York" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/JS.jpg" alt="New York" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/boots.jpg" alt="New York" width="1100" height="500">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <div id="lang2">
+        <p>Sistemas Operativos</p>
+    </div>
+
+    <div id="demo2" class="carousel slide" data-ride="carouse">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="IMG/fedora.jpg" alt="Los Angeles" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/centos.jpg" alt="Chicago" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/wp.jpg" alt="Chicago" width="1100" height="500">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo2" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <div style="margin-top: 5%;" class="jumbotron">
+        <p>Todo estos son los tipos de lenguajes, Sistemas Operativos que el equipo GFORZE utiliza para realizar proyectos.
+            Tambien contamos con conocimientos de AJAX y instalacion de servidor en SUSE, esto se debe a que tenemos personal capacitado. Pero preferimos trabajar con los lenguajes y sistemas operativos puestos en las imagenes.
+        </p>
+    </div>
+
+    <h6 style="margin-top: -15%;" id="Caract">Caracteristicas</h6>
+
+    <div class="jumbotron">
+        <h1>Vision</h1>
+        <p>GFORZE es consciente del poco tiempo que lleva como empresa informática, pero estamos enfocados en crecer constantemente. 
+            Seguiremos ofreciendo un trabajo excelente con nuevos conocimientos, herramientas, personal para poder proporcionar mejores productos 
+            a nuestros clientes.</p>
+    </div>
+
+    <div id="Mision" class="jumbotron">
+        <h1>Mision</h1>
+        <p>GFORZE cuenta con trabajadores capacitados en el área de la informática. También cuentan con conocimientos en sistemas web y la 
+            correcta instalación en los servidores de los clientes. Cumpliremos detalladamente las especificaciones y pautas</p>
+    </div>
+
+    <div id="tabla">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th> <h1>Objetivos</h1></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tener mayor cantidad de clientes satisfechos.</td>
+              </tr>
+              <tr>
+                <td>Obtener mejores conocimientos.</td>
+              </tr>
+              <tr>
+                <td>Incorporar a nuestro equipo colaboradores altamente capacitados.</td>
+              </tr>
+              <tr>
+                <td>Ofrecer nuestros servicios, no solo a nivel nacional, sino que poder expandirnos a nivel internacional.</td>
+              </tr>
+              <tr>
+                <td>Ser reconocidos por nuestro gran trabajo, eficiencia, rapidez y valores.</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <div id="foot">
+        <div class="jumbotron text-center" style="margin-bottom:0">
+          <p>Creado por: GFORZE</p>
+          <p>Contactanos al email 
+            <a href="gforzeinc@gmail.com">gforzeinc@gmail.com</a></p> 
+        </div>
+      </div>
 </body>
 </html>
